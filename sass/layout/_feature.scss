@@ -4,11 +4,11 @@
     gap: 30px;
 }
 
-.feature-item {
+.feature-list__item {
     flex-basis: calc((100% - 90px) / 4);
 }
 
-.feature-icon-wrapper {
+.feature-list__icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
     margin-bottom: 30px;
 }
 
-.feature-sub-title {
+.feature-list__sub-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -25,7 +25,7 @@
     margin-bottom: 10px;
 }
 
-.feature-text {
+.feature-list__text {
     font-size: 14px;
     line-height: 1.71;
     color: var(--desc-text-color);

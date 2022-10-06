@@ -8,15 +8,15 @@
     gap: 30px;
 }
 
-.field-item {
+.field-list__item {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.field-thumb {
+.field-list__thumb {
     position: relative;
 }
 
-.field-img-title {
+.field-list__img-title {
     position: absolute;
     top: 88%;
     left: 50%;

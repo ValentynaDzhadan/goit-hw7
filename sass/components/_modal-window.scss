@@ -9,7 +9,7 @@
     padding: 40px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -24,19 +24,17 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     padding: 0;
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    border-color: var(--accent-color);
-}
-
-.modal-close-btn-icon {
+.modal__close-btn-icon {
     fill: #303030;
     transition: fill var(--transition-dur-and-func);
-}
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-    fill: var(--accent-color);
+    .modal__close-btn:hover &,
+    .modal__close-btn:focus & {
+        fill: var(--accent-color);
+    }
 }

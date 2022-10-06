@@ -7,13 +7,13 @@
     border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header-nav {
+.header__nav {
     display: flex;
     column-gap: 93px;
     align-items: center;
@@ -24,30 +24,29 @@
     column-gap: 50px;
 }
 
-.header-logo {
+.header__logo {
     color: #000000;
 }
 
-.logo-feature {
+.logo__feature {
     color: var(--accent-color);
 }
 
-.menu-link {
+.menu__link {
     color: var(--primary-text-color);
     transition: color var(--transition-dur-and-func);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--accent-color);
-}
-
-.current {
+.menu__link_current {
     position: relative;
     color: var(--accent-color);
 }
 
-.current::after {
+.menu__link_current::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -67,43 +66,39 @@
     color: var(--desc-text-color);
     margin-right: 50px;
     transition: color var(--transition-dur-and-func);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header-email:hover,
-.header-email:focus {
-    color: var(--accent-color);
-}
-
-.email-icon {
+.header-email__icon {
     fill: var(--desc-text-color);
     transition: fill var(--transition-dur-and-func);
-}
-
-.header-email:hover .email-icon,
-.header-email:focus .email-icon {
-    fill: var(--accent-color);
+    .header-email:hover &,
+    .header-email:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 /* tel */
-.header-phone-number {
+.header-tel {
     display: inline-flex;
     align-items: center;
     column-gap: 10px;
     color: var(--desc-text-color);
     transition: color var(--transition-dur-and-func);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header-phone-number:hover,
-.header-phone-number:focus {
-    color: var(--accent-color);
-}
-
-.tel-icon {
+.header-tel__icon {
     fill: var(--desc-text-color);
     transition: fill var(--transition-dur-and-func);
-}
-
-.header-phone-number:hover .tel-icon,
-.header-phone-number:focus .tel-icon {
-    fill: var(--accent-color);
+    .header-tel:hover &,
+    .header-tel:focus & {
+        fill: var(--accent-color);
+    }
 }

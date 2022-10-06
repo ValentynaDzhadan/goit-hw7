@@ -684,13 +684,13 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-wrapper {
+.project-list__wrapper {
   border: 1px solid #eeeeee;
   border-top: 0;
   padding: 20px 24px;
 }
 
-.project-title {
+.project-list__title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -700,7 +700,7 @@ body {
   margin-bottom: 4px;
 }
 
-.project-text {
+.project-list__text {
   font-style: normal;
   font-size: 16px;
   line-height: 1.88;

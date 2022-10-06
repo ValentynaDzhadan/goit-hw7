@@ -1,4 +1,4 @@
-.filters-menu {
+.filters-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     margin-bottom: 50px;
 }
 
-.filters-btn {
+.filters-list__btn {
     min-width: 73px;
     padding: 6px 22px;
     font-style: normal;
@@ -18,14 +18,13 @@
     transition: box-shadow var(--transition-dur-and-func),
         background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
     border-radius: 4px;
-}
-
-.filters-btn:hover,
-.filters-btn:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-    background-color: var(--accent-color);
-    color: #ffffff;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        background-color: var(--accent-color);
+        color: #ffffff;
+    }
 }
 
 .project-list {
@@ -34,24 +33,23 @@
     gap: 30px;
 }
 
-.project-item {
+.project-list__item {
     flex-basis: calc((100% - 60px) / 3);
     transition: box-shadow var(--transition-dur-and-func);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
-.project-item:hover,
-.project-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-wrapper {
+.project-list__wrapper {
     border: 1px solid #eeeeee;
     border-top: 0;
     padding: 20px 24px;
 }
 
-.project-title {
+.project-list__title {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -61,7 +59,7 @@
     margin-bottom: 4px;
 }
 
-.project-text {
+.project-list__text {
     font-style: normal;
     font-size: 16px;
     line-height: 1.88;
@@ -73,7 +71,7 @@
     overflow: hidden;
 }
 
-.project-thumb-text {
+.project-thumb__text {
     outline: 1px solid tomato;
     position: absolute;
     top: 50%;
@@ -89,9 +87,8 @@
     background: rgba(33, 150, 243, 0.9);
     color: #ffffff;
     padding: 63px 24px;
-}
-
-.project-item:hover .project-thumb-text,
-.project-item:focus .project-thumb-text {
-    transform: translateY(-50%);
+    .project-list__item:hover &,
+    .project-list__item:focus & {
+        transform: translateY(-50%);
+    }    
 }
