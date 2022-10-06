@@ -1,0 +1,109 @@
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    column-gap: 93px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-logo {
+    color: #000000;
+}
+
+.logo-feature {
+    color: var(--accent-color);
+}
+
+.menu-link {
+    color: var(--primary-text-color);
+    transition: color var(--transition-dur-and-func);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.current {
+    position: relative;
+    color: var(--accent-color);
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -5%;
+    width: 110%;
+    border: 2px solid var(--accent-color);
+    border-radius: 2px;
+    background: var(--accent-color);
+    margin-top: 30px;
+}
+
+/* email */
+.header-email {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--desc-text-color);
+    margin-right: 50px;
+    transition: color var(--transition-dur-and-func);
+}
+
+.header-email:hover,
+.header-email:focus {
+    color: var(--accent-color);
+}
+
+.email-icon {
+    fill: var(--desc-text-color);
+    transition: fill var(--transition-dur-and-func);
+}
+
+.header-email:hover .email-icon,
+.header-email:focus .email-icon {
+    fill: var(--accent-color);
+}
+
+/* tel */
+.header-phone-number {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--desc-text-color);
+    transition: color var(--transition-dur-and-func);
+}
+
+.header-phone-number:hover,
+.header-phone-number:focus {
+    color: var(--accent-color);
+}
+
+.tel-icon {
+    fill: var(--desc-text-color);
+    transition: fill var(--transition-dur-and-func);
+}
+
+.header-phone-number:hover .tel-icon,
+.header-phone-number:focus .tel-icon {
+    fill: var(--accent-color);
+}
